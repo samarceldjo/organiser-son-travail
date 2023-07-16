@@ -1,0 +1,89 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+}
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color: #34b2e950;
+    display: flex;
+    align-items: center;
+}
+.avatar img {
+    width: 60px;
+    height: 60px;
+    margin-left: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+main {
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.title {
+    margin-bottom: 32px;
+}
+.title h1 { 
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 24px;
+}
+.cards-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    max-width: 1120px;
+}
+.card {
+    flex-basis: 48%;
+    margin-bottom: 16px;
+}
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+}
+.card-title img {
+    width: 40px;
+}
+.card-body {
+    height: 170px;
+    padding: 12px;
+}
+.card-body h2 {
+    font-size: 20px;
+}
+.card-body p {
+    font-size: 1.2rem;
+    margin-top: 16px;
+}
+.card:nth-child(odd) .card-title {
+    background-color: #fada5e;
+}
+.card:nth-child(odd) .card-body {
+    background-color: #fada5e50;
+}
+.card:nth-child(even) .card-title {
+    background-color: #05be70;
+}
+.card:nth-child(even) .card-body {
+    background-color: #05be7015;
+}
+.card:nth-child(3n) .card-title {
+    background-color: #ffcabf;
+}
+.card:nth-child(3n) .card-body {
+    background-color: #ffcabf50;
+}
