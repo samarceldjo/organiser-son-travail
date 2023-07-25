@@ -2,6 +2,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0; margin: 0;
     box-sizing: border-box;
+    line-height: 1.5;
 }
 header {
     width: 100%;
@@ -21,7 +22,7 @@ header {
     background-color: #fff;
 }
 main {
-    padding: 20px;
+    padding: 16px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -91,4 +92,29 @@ main {
 }
 .card:nth-child(3n) .card-body {
     background-color: #ffcabf50;
+}
+
+
+article p {
+    margin: 8px 0;
+    text-align: justify;
+}
+article h1 {
+    margin: 12px 0;
+}
+article ul li {
+    margin-left: 16px;
+}
+
+footer {
+    padding: 18px;
+    background-color: #f1f2f1;
+}
+footer a {
+    color: inherit;
+    font-weight: 500;
+    font-size: 18px;
+}
+footer a:hover {
+    text-decoration: none;
 }
