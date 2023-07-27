@@ -6,6 +6,8 @@
 }
 header {
     width: 100%;
+    position: fixed;
+    z-index: 100;
 }
 .navbar {
     width: 100%;
@@ -27,8 +29,10 @@ header {
     background-color: #fff;
 }
 main {
+    position: absolute;
+    z-index: 1;
     padding: 16px;
-    margin: 0 auto;
+    margin: 100px auto 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -99,16 +103,36 @@ main {
     background-color: #ffcabf50;
 }
 
-
+article {
+    max-width: 680px;
+    margin-bottom: 40px;
+}
+article h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 12px 0;
+}
+article h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
 article p {
     margin: 8px 0;
     text-align: justify;
 }
-article h1 {
-    margin: 12px 0;
-}
 article ul li {
     margin-left: 16px;
+}
+
+aside .card {
+    width: 380px;
+}
+
+.routine-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 footer {
@@ -122,4 +146,15 @@ footer a {
 }
 footer a:hover {
     text-decoration: none;
+}
+
+@media (min-width: 418px) {
+    .routine-main {
+        flex-direction: row;
+    }
+    article {
+        margin-right: 1rem;
+    }
+
+    footer { background-color: #fff;}
 }
