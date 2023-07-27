@@ -6,7 +6,6 @@
 }
 header {
     width: 100%;
-    position: fixed;
     z-index: 100;
 }
 .navbar {
@@ -29,10 +28,8 @@ header {
     background-color: #fff;
 }
 main {
-    position: absolute;
-    z-index: 1;
     padding: 16px;
-    margin: 100px auto 0;
+    margin: 0px auto 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -103,9 +100,15 @@ main {
     background-color: #ffcabf50;
 }
 
+
+.routine-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
 article {
-    max-width: 680px;
-    margin-bottom: 40px;
+    padding: 8px;
 }
 article h1 {
     font-size: 2rem;
@@ -123,17 +126,14 @@ article p {
 article ul li {
     margin-left: 16px;
 }
-
+aside {
+    width: 100%;
+    padding: 8px;
+}
 aside .card {
-    width: 380px;
+    width: 100%;
 }
 
-.routine-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: column;
-}
 
 footer {
     padding: 18px;
@@ -148,13 +148,15 @@ footer a:hover {
     text-decoration: none;
 }
 
-@media (min-width: 418px) {
+@media (min-width: 1060px) {
     .routine-main {
         flex-direction: row;
+        width: 1060px;
     }
     article {
         margin-right: 1rem;
     }
-
-    footer { background-color: #fff;}
+    aside .card {
+        margin-top: 32px;
+    }
 }
